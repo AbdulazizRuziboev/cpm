@@ -35,8 +35,8 @@ def banner(console):
     except:
         console.clear()
     console.print("[bold red][*] " + base64.b64decode('V2VsY29tZSB0byBDUE1OdWtlciwgdGhlIGhhY2tlcnMgdG9vbGtpdA==').decode('utf-8') + "[/bold red].", "\n")
-    console.print("[bold green][*] Description[/bold green]: Car Parking Multiplayer Hacking Tool.")
-    console.print("[bold green][*] Telegram[/bold green]: [bold blue]@" + base64.b64decode('Q1BNTnVrZXJPZmZpY2lhbA==').decode('utf-8') + "[/bold blue].")
+    console.print("[bold yellow][*] Description[/bold green]: Car Parking Multiplayer Hacking Tool.")
+    console.print("[yellow][*] Telegram[/bold green]: [bold blue]@" + base64.b64decode('Q1BNTnVrZXJPZmZpY2lhbA==').decode('utf-8') + "[/bold blue].")
     console.print("[bold red]==================================================[/bold red]")
     console.print("[bold yellow][!] Note[/bold yellow]: Logout from CPM before using this tool !.", end="\n\n")
 
@@ -46,10 +46,10 @@ def load_player_data(cpm):
         data = response.get('data')
         if 'floats' in data and 'localID' in data and 'money' in data and 'coin' in data:
             console.print("[bold][red]========[/red][ PLAYER DETAILS ][red]========[/red][/bold]")
-            console.print("[bold green]Name   [/bold green]: " + (data.get('Name') if 'Name' in data else 'UNDEFINED') + ".")
-            console.print("[bold green]ID[/bold green]     : " + (data.get('localID') if 'localID' in data else 'UNDEFINED') + ".")
-            console.print("[bold green]Money  [/bold green]: " + (str(data.get('money')) if 'money' in data else 'UNDEFINED') + ".")
-            console.print("[bold green]Coins  [/bold green]: " + (str(data.get('coin')) if 'coin' in data else 'UNDEFINED') + ".", end="\n\n")
+            console.print("[bold yellow]Name   [/bold green]: " + (data.get('Name') if 'Name' in data else 'UNDEFINED') + ".")
+            console.print("[bold yellow]ID[/bold green]     : " + (data.get('localID') if 'localID' in data else 'UNDEFINED') + ".")
+            console.print("[bold yellow]Money  [/bold green]: " + (str(data.get('money')) if 'money' in data else 'UNDEFINED') + ".")
+            console.print("[bold yellow]Coins  [/bold green]: " + (str(data.get('coin')) if 'coin' in data else 'UNDEFINED') + ".", end="\n\n")
         else:
             console.print("[bold red]! ERROR[/bold red]: new accounts most be signed-in to the game at least once !.")
             exit(1)
